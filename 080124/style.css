@@ -1,0 +1,97 @@
+body,
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+}
+
+.left {
+    height: calc(100% - 30px);
+    width: 20%;
+    border: 1px black solid;
+    padding: 15px;
+    font-size: 20px;
+
+}
+
+.left label {}
+
+.butto {
+    margin-top: 15%;
+
+}
+
+.left input {
+    width: 98%;
+    height: 3%;
+    margin-bottom: 3%;
+}
+
+.buttons {
+    display: flex;
+    padding-right: 15%;
+    padding-top: 5%;
+    width: 100%;
+    justify-content: flex-end;
+
+
+}
+
+.buttons button {
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    margin: 5px;
+
+}
+
+.center {
+    width: 60%;
+    border: 1px black solid;
+}
+
+.center .button {
+    display: flex;
+    justify-content: center;
+}
+
+.button button {
+    height: 5%;
+    width: 15%;
+    padding: 1%;
+}
+
+.text {
+    border: 1px black solid;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-right: 5%;
+    margin-left: 5%;
+    padding: 1%;
+    height: 80%;
+    overflow-x: auto;
+}
+
+.right {
+    height: calc(100% - 30px);
+    width: 20%;
+    border: 1px black solid;
+    padding: 15px;
+    font-size: 20px;
+
+
+}
+
+.right input {
+    width: 98%;
+    height: 3%;
+    margin-bottom: 3%;
+}
+span{
+    border: red 1px solid;
+}

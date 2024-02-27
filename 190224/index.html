@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Potegowanie</title>
+</head>
+<body>
+    <div class="container">
+    <input id="podstawa" type="number" placeholder="liczba">
+    <input id="n" type="number" placeholder="potega">
+    <button onclick="potegowanie()">Pokaz wynik</button>
+</div>
+<div id="tablica" class="tablica"></div>
+    <script>
+        function potegowanie(podstawa, n){
+            podstawa = document.getElementById("podstawa").value;
+            n = document.getElementById("n").value; 
+            
+            let tablica = new Array(n);
+            for(let i = 0; i < n; i++){
+                tablica[i] = Math.pow(podstawa, i);
+                
+        }
+        document.getElementById("tablica").textContent = tablica;
+    }
+    </script>
+
+
+</body>
+</html>

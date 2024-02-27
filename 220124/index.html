@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Zegar</title>
+</head>
+
+<body>
+    <div id="clock">
+        <div id="hours">00</div>
+        <div id="minutes">00</div>
+        <div id="seconds">00</div>
+        <div id="suma"></div>
+    </div>
+
+    <script>
+        function updateClock(){
+            var now = new Date();
+            var hours = now.getHours();
+            var minutes = now.getMinutes();
+            var seconds = now.getSeconds();
+            
+            hours = (hours < 10) ? "0" + hours : hours;
+
+            if(minutes < 10){
+                minutes = "0" + minutes
+            }else{
+                minutes = minutes
+            }
+
+            seconds = (seconds < 10) ? "0" + seconds : seconds;
+
+            document.getElementById("hours").textContent = hours + ":";
+            document.getElementById("minutes").textContent = minutes + ":";
+            document.getElementById("seconds").textContent = seconds;
+        
+             if (seconds <= 10){
+                document.getElementById("seconds").style.color = "lime";
+            } else if (seconds <= 20){
+                document.getElementById("seconds").style.color = "brown";
+            } else if (seconds <= 30){
+                document.getElementById("seconds").style.color = "yellow";
+            } else if (seconds <= 40){
+                document.getElementById("seconds").style.color = "red";
+            } else if (seconds <= 50){
+                document.getElementById("seconds").style.color = "green";
+            } else{
+                document.getElementById("seconds").style.color = "pink";
+            } 
+
+            hours = parseInt(hours)
+            minutes = parseInt(minutes)
+            seconds = parseInt(seconds)
+
+            var sum = hours + minutes + seconds;
+            document.getElementById("suma").textContent = sum
+        }
+
+
+        setInterval(updateClock, 1000)
+
+        updateClock();
+        
+    </script>
+</body>
+
+</html>

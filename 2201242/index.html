@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator</title>
+</head>
+<body>
+
+    <div class="main">
+    <p>A:<input type="number" id="A"></p>
+    <p>B:<input type="number" id="B"></p>
+    <p>C:<input type="number" id="C"></p><br>
+    <input type="radio" name="wybieranie" id="Dodawanie">Dodawanie
+    <input type="radio" name="wybieranie" id="Odejmowanie">Odejmowanie
+    <input type="radio" name="wybieranie" id="Mnozenie">Mnożenie
+    <input type="radio" name="wybieranie" id="Dzielenie">Dzielenie
+
+    <div id="wynik"></div>
+
+    <div id="ParzystaA"></div>
+    <div id="ParzystaB"></div>
+    <div id="ParzystaC"></div>
+    <button onclick="kalkulator()">Licz</button>
+    </div>
+    <script>
+
+        function kalkulator(){
+            var A = document.getElementById("A").value;
+            var B = document.getElementById("B").value;
+            var C = document.getElementById("C").value;
+            var suma;
+            document.getElementById("Dodawanie");
+            document.getElementById("Odejmowanie");
+            document.getElementById("Mnozenie");
+            document.getElementById("Dzielenie");
+            if(Dodawanie.checked){
+                suma = parseInt(A) + parseInt(B) + parseInt(C);
+                document.getElementById("wynik").textContent = "Wynik: " + suma;
+            }
+            if(Odejmowanie.checked){
+                suma = parseInt(A) - parseInt(B) - parseInt(C);
+                document.getElementById("wynik").textContent = "Wynik: " + suma;
+            }
+            if(Mnozenie.checked){
+                suma = parseInt(A) * parseInt(B) * parseInt(C);
+                document.getElementById("wynik").textContent = "Wynik: " + suma;
+            }
+            if(Dzielenie.checked){
+                suma = parseInt(A) / parseInt(B) / parseInt(C);
+                document.getElementById("wynik").textContent = "Wynik: " + suma;
+                if(C==0){
+                    document.getElementById("wynik").textContent = "Nie dziel przez 0";
+                }
+            }
+
+            if(A % 2 == 0){
+                document.getElementById("ParzystaA").style.color = "green";
+                document.getElementById("ParzystaA").textContent = "Liczba A jest parzysta"
+            } else{
+                document.getElementById("ParzystaA").style.color = "red";
+                document.getElementById("ParzystaA").textContent = "Liczba A jest nieparzysta"
+            }
+            if(B % 2 == 0){
+                document.getElementById("ParzystaB").style.color = "green";
+                document.getElementById("ParzystaB").textContent = "Liczba B jest parzysta"
+            } else{
+                document.getElementById("ParzystaB").style.color = "red";
+                document.getElementById("ParzystaB").textContent = "Liczba B jest nieparzysta"
+            }
+            if(C % 2 == 0){
+                document.getElementById("ParzystaC").style.color = "green";
+                document.getElementById("ParzystaC").textContent = "Liczba C jest parzysta"
+            } else{
+                document.getElementById("ParzystaC").style.color = "red";
+                document.getElementById("ParzystaC").textContent = "Liczba C jest nieparzysta"
+            }
+
+            if(suma >= 100 && <= 200 && suma %2 ==0 && suma %3 == 0 suma %5 ==0){
+                alert("Wygrales!");
+            }
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Zegar</title>
+</head>
+<body>
+    <div class="zegar" id="clock">
+        <div id="hours">00</div>
+        <div id="minutes">00</div>
+        <div id="seconds">00</div>
+    </div>
+
+    <script>
+        function updateClock(){
+            var now = new Date();
+            var hours = now.getHours();
+            var minutes = now.getMinutes();
+            var seconds = now.getSeconds();
+
+            hours = (hours < 10) ? "0" + hours : hours;
+            seconds = (seconds < 10) ? "0" + seconds : seconds;
+
+            document.getElementById("hours").textContent = hours;
+            document.getElementById("minutes").textContent = ": " + minutes;
+            document.getElementById("seconds").textContent = ": " + seconds;
+
+
+        }
+        setInterval(updateClock, 1);
+        updateClock();
+    </script>
+</body>
+</html>

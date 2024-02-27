@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>JakasStrona</title>
+    <script>
+        function clearfontt() {
+            document.getElementById("result").style.fontSize = "1rem";
+            document.getElementById("result").style.color = "black";
+            document.getElementById("result").style.fontStyle = "normal";
+            document.getElementById("result").style.letterSpacing = "0px";
+        }
+        function size() {
+            let value = document.getElementById("size").value;
+            document.getElementById("result").style.fontSize = value + "px";
+        }
+        function color() {
+            let value = document.getElementById("color").value;
+            document.getElementById("result").style.color = value;
+        }
+        function stylee() {
+            let value = document.getElementById("stylee").value;
+            document.getElementById("result").style.fontStyle = value;
+        }
+        function spacingg() {
+            let value = document.getElementById("spacingg").value;
+            document.getElementById("result").style.letterSpacing = value + "px";
+        }
+
+        function clearborderr() {
+            document.getElementById("result").style.borderColor = "black";
+            document.getElementById("result").style.borderStyle = "solid";
+            document.getElementById("result").style.borderRadius = "0px";
+        }
+        function bcolor() {
+            let value = document.getElementById("bcolor").value;
+            document.getElementById("result").style.borderColor = value;
+        }
+        function bstyle() {
+            let value = document.getElementById("bstyle").value;
+            document.getElementById("result").style.borderStyle = value;
+        }
+        function bradius() {
+            let value = document.getElementById("bradius").value;
+            document.getElementById("result").style.borderRadius = value + "px";
+        }
+        function bwidth() {
+            let value = document.getElementById("bwidth").value;
+            document.getElementById("result").style.borderWidth = value + "px";
+        }
+
+        function clearallcenter() {
+            document.getElementById("result").style.borderColor = "black";
+            document.getElementById("result").style.borderStyle = "solid";
+            document.getElementById("result").style.borderRadius = "0px";
+            document.getElementById("result").style.fontSize = "1rem";
+            document.getElementById("result").style.color = "black";
+            document.getElementById("result").style.fontStyle = "normal";
+            document.getElementById("result").style.letterSpacing = "0px";
+        }
+        function clearallrightone() {
+            document.getElementById("result").style.borderColor = "black";
+            document.getElementById("result").style.borderStyle = "solid";
+            document.getElementById("result").style.borderRadius = "0px";
+            document.getElementById("result").style.fontSize = "1rem";
+            document.getElementById("result").style.color = "black";
+            document.getElementById("result").style.fontStyle = "normal";
+            document.getElementById("result").style.letterSpacing = "0px";
+            document.getElementById("result").style.borderWidth = "px";
+        }
+        function clearallxr() {
+            document.getElementById("result").style.width = "88%";
+            document.getElementById("result").style.height = "80%";
+        }
+        function widthh() {
+            let value = document.getElementById("widthh").value;
+            document.getElementById("result").style.width = value + "px";
+        }
+        function heightt() {
+            let value = document.getElementById("heightt").value;
+            document.getElementById("result").style.height = value + "px";
+        }
+
+        function bcolorr() {
+            let value = document.getElementById("bcolorr").value;
+            document.getElementById("teksty").style.borderColor = value;
+        }
+        function bstylee() {
+            let value = document.getElementById("bstylee").value;
+            document.getElementById("teksty").style.borderStyle = value;
+        }
+        function bradiuss() {
+            let value = document.getElementById("bradiuss").value;
+            document.getElementById("teksty").style.borderRadius = value + "px";
+        }
+        function bwidthh() {
+            let value = document.getElementById("bwidthh").value;
+            document.getElementById("teksty").style.borderWidth = value + "px";
+        }
+
+    </script>
+</head>
+
+<body>
+    <div class="left">
+        <label>Font size</label>
+        <input id="size" type="number">
+        <label>Color</label>
+        <input id="color" type="text">
+        <label>Font style</label>
+        <input id="stylee" type="text">
+        <label>Letter spacing</label>
+        <input id="spacingg" type="number">
+        <div class="buttons">
+            <button onclick="clearfontt()">Reset</button>
+            <button onclick="size(), color(), stylee(), spacingg()">Wyslij</button>
+        </div>
+        <label for="bcolor" class="butto">Border color</label>
+        <input id="bcolor" type="text">
+        <label>Border style</label>
+        <input id="bstyle" type="text">
+        <label>Border radius</label>
+        <input id="bradius" type="number">
+        <div class="buttons">
+            <button onclick="clearborderr()">Reset</button>
+            <button onclick="bcolor(), bstyle(), bradius()">Wyslij</button>
+        </div>
+    </div>
+    <div class="center">
+        <div class="text" id="result">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis velit molestias provident, tempora aliquam
+            quae laudantium sunt enim minus molestiae? Cumque aut iusto architecto sed fugiat nihil sunt distinctio
+            doloribus.
+            Quidem dignissimos incidunt sed debitis odio atque, ad dolorem molestias, tempora quas nam iusto
+            voluptatibus illo minima quos ut et sint quae est rerum voluptates magni fugiat cum? Quisquam, quam.
+            At fuga, beatae voluptas omnis iusto quibusdam provident nam eaque veritatis explicabo aliquam vel optio
+            consequuntur quo eos perferendis culpa quod nisi voluptates corporis hic sit. Nemo totam cumque quae.
+            Voluptatum quae <span id="teksty">consequatur aliquam id tempora, ducimus ut necessitatibus, quia</span> ratione hic minus eum est.
+            Minus dicta harum tempore neque quod, iure porro? Earum consequatur cum, itaque ut obcaecati suscipit.
+            Quaerat officia adipisci perspiciatis quasi earum, inventore itaque quidem, modi tempore consectetur
+            quibusdam nesciunt fugit deleniti incidunt libero qui hic neque sapiente debitis, voluptates ipsum!
+            Exercitationem optio suscipit vel facilis!
+            Voluptate, incidunt nemo. Quas inventore soluta error, a dicta voluptas tempore consectetur eaque quam
+            officia praesentium, accusamus blanditiis similique. Quidem dolorum repellat, dolore officiis quam minima
+            repudiandae fuga vitae vero.
+            Modi dolorem odio optio autem sequi laudantium temporibus illo veritatis incidunt exercitationem vero id,
+            minus nostrum cupiditate excepturi tenetur! Aliquam, dolorem vel assumenda accusamus neque obcaecati! Sunt
+            soluta animi necessitatibus?
+            Iste soluta sit voluptatibus voluptatum quo quis incidunt totam suscipit, corrupti neque, doloremque
+            provident dolore nulla sed minima optio voluptates facilis deleniti reprehenderit assumenda accusantium
+            esse, at sunt quaerat? Qui!
+            Laudantium provident quo consequuntur fugiat ea adipisci voluptate quaerat fugit eveniet alias iusto porro
+            dolorem tempore animi amet, architecto quas explicabo dicta aliquid, quisquam, in repellat consequatur!
+            <span id="teksty">Eaque, quo animi?</span>
+            Eius earum autem repellat magni natus. Dicta tempora ipsum rerum delectus iure tenetur repellendus. Fugiat
+            rem tempore eos asperiores voluptatem, ipsa in cumque facilis officia impedit, at dolorum provident! Eos!
+            Sint praesentium obcaecati odit beatae architecto sequi. Et, aspernatur quas molestiae incidunt aliquam
+            deleniti fugiat repellendus cupiditate aliquid excepturi quasi voluptatum quae pariatur ipsam consequatur
+            voluptatem debitis eius libero rerum!
+            Sit aspernatur distinctio odit at omnis mollitia rerum, asperiores aliquid vitae porro perspiciatis minima
+            ex animi reprehenderit veniam accusantium, aperiam totam nostrum, nihil aliquam perferendis? Voluptatum
+            itaque quod error consequatur.
+            Aliquid reprehenderit itaque qui totam odio, cum dolorem laboriosam id eum hic aliquam omnis, provident
+            laudantium sunt, voluptatibus et ex cumque enim blanditiis temporibus quia! Animi praesentium aperiam nobis
+            quod.
+            <span id="teksty">Sequi suscipit, dolore est, exercitationem impedit optio fugit reprehenderit ut animi, iusto voluptates
+            accusamus placeat! Assumenda ratione suscipit eveniet odit, atque corrupti culpa impedit harum hic quo
+            molestiae quod asperiores?</span>
+            Aspernatur, iste! Saepe, officia sit! Aspernatur numquam, quis natus veritatis ducimus, nostrum cumque illum
+            obcaecati dolores facere fuga similique recusandae impedit delectus optio deleniti! Quo quod modi nisi
+            voluptate rem?
+            Similique fuga possimus aspernatur eum consectetur facilis sint, tempora accusamus? Voluptatem laudantium
+            doloribus cum esse, impedit natus tempora cupiditate, ab molestias perferendis commodi reiciendis excepturi
+            minima? Pariatur voluptatum explicabo officiis.
+            In nemo qui facere quisquam accusantium rerum corrupti, a quae deserunt est inventore vero quis aperiam
+            impedit, saepe sint natus rem ratione reprehenderit debitis totam possimus ab dolorum enim? Fugit.
+        </div>
+        <div class="button">
+            <button onclick="clearallcenter()">RESET</button>
+        </div>
+    </div>
+    <div class="right">
+        <label>Font size</label>
+        <input id="sizeelement" type="number">
+        <label>Color</label>
+        <input id="colorelement" type="text">
+        <label>Font style</label>
+        <input id="styleelement" type="text">
+        <label>Letter spacing</label>
+        <input id="spacingelement" type="number">
+        <label class="butto">Border color</label>
+        <input id="bcolorr" type="text">
+        <label>Border style</label>
+        <input id="bstylee" type="text">
+        <label>Border radius</label>
+        <input id="bradiuss" type="number">
+        <label>Border width</label>
+        <input id="bwidthh" type="number">
+        <div class="buttons">
+            <button onclick="clearallrightone()">Reset</button>
+            <button onclick="sizeelement(), colorelement(), styleelement(), spacingelement(), bcolorr(), bstylee(), bradiuss(), bwidthh()">Wyslij</button>
+        </div>
+
+        <input id="widthh" type="range" min="20" max="1000">
+        <input id="heightt" type="range" min="20" max="1000">
+        <div class="buttons">
+            <button onclick="clearallxr()">Reset</button>
+            <button onclick="widthh(), heightt()">Wyslij</button>
+        </div>
+    </div>
+</body>
+
+</html>

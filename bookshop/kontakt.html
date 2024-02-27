@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sklep z książkami</title>
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="images/logo.png">
+</head>
+
+<body style="background-color: rgb(216, 216, 216);">
+
+  <nav class="navbar navbar-expand navbar-light bg-dark">
+    <img src="images/logo.png" alt="logo" height="50px" width="50px">
+    <a href="index.html" class="navbar-brand p-2 text-white">Sklep z książkami</a>
+
+    <ul class="navbar-nav me-auto">
+      <li>
+        <a href="index.html" class="nav-link text-white">Strona główna</a>
+      </li>
+      <li>
+        <a href="ksiazki.html" class="nav-link text-white">Książki</a>
+      </li>
+      <li>
+        <a href="kontakt.html" class="nav-link text-white">Kontakt</a>
+      </li>
+    </ul>
+    <div class="d-flex align-self-end me-5">
+      <input class="rounded me-3" type="search" placeholder="Szukaj" aria-div="Search">
+      <button class="btn btn-success" type="submit">Szukaj</button>
+    </div>
+  </nav>
+
+
+  <div class="pt-5" style="padding-bottom: 5%;">
+    <div class="container text-center card pt-5 pb-5 bg-secondary text-white  ">
+      <h1>Kontakt</h1>
+      <p>Numer telefonu: +48 123 456 789</p>
+      <p>Email: mail@mail.com</p>
+      <p>Adres: Ul. Ulica 5</p>
+    </div>
+  </div>
+
+  <div class="kontakt container">
+    <div>
+      <div for="Imie">Imię</div>
+      <input class="input" type="text" placeholder="Twoje imię">
+
+      <div for="Nazwisko">Nazwisko</div>
+      <input class="input" type="text" placeholder="Twoje nazwisko">
+
+      <div for="Kraj">Kraj</div>
+      <select>
+        <option value="Polska">Polska</option>
+        <option value="Ukraina">Ukraina</option>
+        <option value="Rosja">Rosja</option>
+      </select>
+
+      <div for="Problem">Problem</div>
+      <textarea placeholder="Opisz swój problem" style="height:200px"></textarea>
+
+      <button class="btn btn-success" type="submit">Wyślij</button>
+    </div>
+  </div>
+
+  <footer>
+    <div>
+      <div class="contact"></div>
+      <p class="open">
+      <p class="icons"><img src="images/icon-phone.svg" alt="phone">⠀ Phone: +1-543-123-4567</p>
+
+      <p class="icons"><img src="images/icon-email.svg" alt="phone">⠀ example@fylo.com</p>
+    </div>
+    <div class="linkslist">
+      <p>O nas</p>
+      <p>Praca</p>
+      <p>Siedziba</p>
+      <p>Blog</p>
+    </div>
+    <div class="linkslist">
+      <p>Skontaktuj się z nami</p>
+      <p>Polityka</p>
+      <p>Prywatność</p>
+    </div>
+    <div class="linkslist">
+      <p>Regulamin</p>
+      <p>Terms</p>
+      <p>Privacy</p>
+    </div>
+    </p>
+  </footer>
+
+</body>
+
+</html>

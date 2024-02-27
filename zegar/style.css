@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch+Pop&display=swap');
+html, *{
+    margin: 0;
+    padding: 0;
+}
+.zegar{
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    padding-top: 25%;
+    font-family:  'Rubik Glitch Pop';
+}

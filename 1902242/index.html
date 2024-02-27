@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <div class="inputs">
+            <p>ILE:</p><input type="number" id="ile" placeholder="ILE">
+            <p>a:</p><input type="number" id="a" placeholder="a">
+            <p>b:</p><input type="number" id="b" placeholder="b">
+            <p>R:</p><input type="number" id="rgbr" placeholder="R">
+            <p>G:</p><input type="number" id="rgbg" placeholder="G">
+            <p>B:</p><input type="number" id="rgbb" placeholder="B">
+            <input type="checkbox" id="czek">
+            <button onclick="oblicz()">Submit</button>
+        </div>
+        <div id="container" class="container">
+            <div class="left">
+                <div id="licznik"></div>
+            </div>
+            <div id="center" class="center"></div>
+            <div class="right"></div>
+        </div>
+
+        <script>
+            function oblicz() {
+                var ile = parseInt(document.getElementById('ile').value);
+                var a = parseInt(document.getElementById('a').value);
+                var b = parseInt(document.getElementById('b').value);
+                var rgbr = parseInt(document.getElementById('rgbr').value);
+                var rgbg = parseInt(document.getElementById('rgbg').value);
+                var rgbb = parseInt(document.getElementById('rgbb').value);
+                var counter = 0;
+                var czek = document.getElementById("czek");
+            
+                var centerDiv = document.getElementById("center");
+                centerDiv.innerHTML = '';
+
+            
+                for (var i = 0; i <= ile; i++) {
+                    var element = document.createElement("div");
+                    var element2 = document.createElement("div");
+                    element2.style.height = a + "px";
+                    element2.style.width = b + "px";
+                    element2.style.background = "black";
+                    element2.style.marginTop = "-18px";
+                    element2.style.clipPath = "polygon(50% 0%, 0% 100%, 100% 100%)";
+
+                    element.style.height = a + "px";
+                    element.style.width = b + "px";
+                    element.style.background = "black";
+                    element.style.margin = "10px";
+                    element.style.backgroundColor = "rgb(" + rgbr + "," + rgbg + "," + rgbb + ")";
+                    rgbr++;
+                    rgbg++;
+                    rgbb++;
+                    element.textContent = i + 1;    
+                    if(i % 7 === 0 ){
+                        element.style.borderRadius = "50%";
+                    }
+                    if(i % 7 === 0 )
+                    {
+                        counter++;
+                    }
+                    document.getElementById("licznik").innerText = counter;
+
+                    if(czek.checked && i % 2 === 0){
+                        element.appendChild(element2);
+                    }
+            
+                    document.getElementById("center").appendChild(element);
+                    
+
+
+                }
+            }
+        </script>
+    </main>
+</body>
+
+</html>
