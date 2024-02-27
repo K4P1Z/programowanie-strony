@@ -1,0 +1,21 @@
+.box_1{
+    width: 300px;
+    height: 500px;
+    background-color: rebeccapurple;
+}
+
+.box_2{
+    width: 300px;
+    height: 500px;
+    background-color: rebeccapurple;
+}
+
+@media screen and (min-width: 1000px){
+    .box_1{
+        background-color: yellow;
+        color: red;
+    }
+    .wrapper{
+        display: flex;
+    }
+}
