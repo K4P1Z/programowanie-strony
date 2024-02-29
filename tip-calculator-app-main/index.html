@@ -176,10 +176,10 @@
         <p class="tip">Select Tip %</p>
 
         <button onclick="bill()">5%</button>
-        <button onclick="bill1()">10%</button>
-        <button onclick="bill2()">15%</button><br>
-        <button onclick="bill3()">25%</button>
-        <button onclick="bill4()">50%</button>
+        <button  onclick="bill1()">10%</button>
+        <button  onclick="bill2()">15%</button><br>
+        <button  onclick="bill3()">25%</button>
+        <button  onclick="bill4()">50%</button>
         <input class="custom" placeholder="Custom">
 
         <p class="people">Number of People</p>
@@ -211,16 +211,16 @@
 </body>
 
 <script>
-
-  function bill() {
+  
+  function bill(){
     let bil = document.getElementById("bill").value;
     document.getElementById("rezult").textContent = "$" + bil;
   }
-  function bill1() {
+  function bill1(){
     let bil = document.getElementById("bill").value;
     document.getElementById("rezult").textContent = "$" + bil;
   }
-  function reset() {
+  function reset(){
     document.getElementById("rezult").textContent = "$0.00";
   }
 </script>
