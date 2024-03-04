@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <input type="number" id="liczba" placeholder="Wpisz liczbe">
+        <button onclick="dodaj()" id="dodaj">Dodaj</button>
+        <button onclick="oblicz()" id="oblicz">Oblicz</button>
+    </main>
+    <div class="wszystko">
+    <div class="liczby" id="liczby"></div>
+    <div id="suma"></div>
+    <div id="parzyste"></div>
+    <div id="nieparzyste"></div>
+    <div id="potega"></div>
+</div>
+
+
+
+
+    <script>
+        let tablica = new Array();
+        function dodaj(){
+          let liczba = document.getElementById("liczba").value
+          tablica.push(liczba)
+          document.getElementById("liczba").value="";
+        };
+
+        function oblicz() {
+            document.getElementById("liczby").innerText = tablica;
+            let suma = 0;
+            for(i=0; i<tablica.length; i++){
+                suma += parseInt(tablica[i]);
+            }
+            let parzysta = 0;
+            for(j=0; j<tablica.length; j++){
+                if (parzysta % 2 == 0) {
+                    parzysta = parseInt(tablica[j]);
+                }
+            }
+           let  nieparzysta = 0;
+            for(k=0; k<tablica.length; k++){
+                if (nieparzysta % 2 == 0) {
+                }
+                else{
+                    nieparzysta = parseInt(tablica[k]);
+
+                }
+            }
+
+            document.getElementById("liczby").innerText = tablica;
+            document.getElementById("suma").innerText = suma;
+            document.getElementById("parzyste").innerText = parzysta;
+            document.getElementById("nieparzyste").innerText = nieparzysta;
+
+
+        };
+
+        /*
+//parzysta
+        function parzysta() {
+            let parzysta = document.getElementById("liczba").value
+            if (parzysta % 2 == 0) {
+                tablica.push(parzysta)
+            }
+        };
+//nieparzysta
+        function nieparzysta() {
+            let nieparzysta = document.getElementById("liczba").value
+            if (nieparzysta % 2 == 0) {
+            }
+            else {
+                tablica.push(nieparzysta)
+            }
+        };
+//potega
+        function potega() {
+            let potega = document.getElementById("liczba").value
+            tablica.push(potega ** 3)
+        };
+
+        function oblicz() {
+            document.getElementById("liczby").innerText = tablica;
+
+
+
+
+        }
+*/
+
+        /* Parzysta
+            let tablica = new Array();
+        
+               function dodaj(){
+                 let liczba = document.getElementById("liczba").value
+                 if(liczba % 2 == 0) {
+                 tablica.push(liczba)
+                 }
+               };
+        
+               function oblicz(){
+                let liczba = document.getElementById("liczba").value
+                    document.getElementById("liczby").innerText = tablica;
+        
+        
+                
+               }
+        */
+        /* Nieparzysta
+        let tablica = new Array();
+        
+        function dodaj(){
+          let liczba = document.getElementById("liczba").value
+          if(liczba % 2 == 0) {
+          }
+          else{
+            tablica.push(liczba)
+          }
+        };
+        
+        function oblicz(){
+         let liczba = document.getElementById("liczba").value
+             document.getElementById("liczby").innerText = tablica;
+        
+        }
+              */
+
+    </script>
+
+</body>
+
+</html>

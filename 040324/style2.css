@@ -1,0 +1,74 @@
+body, html{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    background: linear-gradient(to right, rgb(19, 81, 89), #00f5e0);
+ }
+ main{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(8, 113, 123);
+    box-shadow: 5px 5px 10px 10px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+ }
+ button{
+    margin: 10px;
+    background-color: rgb(1, 255, 213);
+    color: white;
+    border-radius: 30%;
+ }
+ button:hover{
+    background-color: rgb(0, 88, 88);
+    outline: black;
+ }
+ #liczby{
+    margin-top: 10%;
+    margin: 10%;
+    background-color: rgb(8, 113, 123);
+    box-shadow: 5px 5px 10px 10px;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    height: 100px;
+ }
+ li{
+    height: 40px;
+    width: 150px;
+    margin: 10px;
+    list-style-type: none;
+    background-color:rgb(7, 154, 154);
+    box-shadow: 5px 5px 10px 10px;
+    border-radius: 20px;
+    text-align: center;
+    transition: box-shadow 0.8s ease-in-out;
+ }
+ input{
+    background-color:  rgb(1, 255, 213);
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
