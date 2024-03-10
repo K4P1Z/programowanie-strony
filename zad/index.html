@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <input type="number" id="liczba" placeholder="Wpisz liczbe">
+        <button onclick="dodaj()" id="dodaj">Dodaj</button>
+        <button onclick="oblicz()" id="oblicz">Oblicz</button>
+    </main>
+    <div class="wszystko">
+        <div class="liczby" id="liczby"></div>
+        <div id="suma"></div>
+        <div id="parzyste"></div>
+        <div id="nieparzyste"></div>
+        <div id="potega"></div>
+        <div id="trojkaty"></div>
+    </div>
+
+    <script>
+        let tablica = new Array();
+
+        function dodaj() {
+            let liczba = document.getElementById("liczba").value;
+            tablica.push(liczba);
+            document.getElementById("liczba").value = "";
+        }
+
+        function oblicz() {
+            let suma = 0;
+            let parzyste = new Array();
+            let nieparzyste = new Array();
+
+            for (let i = 0; i < tablica.length; i++) {
+                let liczba = parseInt(tablica[i]);
+                suma += liczba;
+
+                if (liczba % 2 == 0) {
+                    parzyste.push(liczba);
+                } else {
+                    nieparzyste.push(liczba);
+                }
+            }
+
+            let potega = new Array();
+            for (let i = 0; i < tablica.length; i++) {
+                let liczba = parseInt(tablica[i]);
+                potega.push(Math.pow(liczba, 3));
+            }
+
+            document.getElementById("liczby").innerText = tablica.join(", ");
+            document.getElementById("suma").innerText = "Suma: " + suma;
+            document.getElementById("parzyste").innerText = "Parzyste: " + parzyste.join(", ");
+            document.getElementById("nieparzyste").innerText = "Nieparzyste: " + nieparzyste.join(", ");
+            document.getElementById("potega").innerText = "Potęga: " + potega.join(", ");
+
+            let trojkaty = 0;
+            let boki = new Array();
+            for (let i = 0; i < tablica.length; i++) {
+                boki.push(parseInt(tablica[i]));
+                if (boki.length == 3) {
+                    let a = boki[0];
+                    let b = boki[1];
+                    let c = boki[2];
+                    if (a + b > c && a + c > b && b + c > a) {
+                        trojkaty++;
+                    }
+                    boki = new Array();
+                }
+            }
+            document.getElementById("trojkaty").innerText += " Maksymalna ilość trójkątów: " + trojkaty;
+        }
+    </script>
+</body>
+
+</html>

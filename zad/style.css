@@ -1,0 +1,38 @@
+html,
+* {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(43, 65, 39)
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+input {
+    padding: 1%;
+    border-radius: 20px;
+    text-align: center;
+    background-color: aqua;
+}
+
+button {
+    padding-left: 1%;
+    padding-right: 1%;
+    border-radius: 10px;
+    background-color: #78c255;
+}
+
+.wszystko {
+    background-color: #255c88;
+    padding: 5px;
+    font-size: 35px;
+    height: 63vh;
+    justify-content: center;
+    color: red;
+    font-family: Arial, Helvetica;
+    font-weight: bold;
+}
