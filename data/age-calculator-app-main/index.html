@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="style.css">
+
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="calculator">
+      <div class="dates">
+        <div class="day">
+          <div class="dzien">
+            Day
+          </div>
+          <input type="number" id="dni" placeholder="DD" min="1" max="31">
+        </div>
+
+
+        <div class="month">
+          <div class="miesiac">
+            Month
+          </div>
+          <input type="number" id="miesiac" placeholder="MM" min="1" max="12">
+        </div>
+
+        <div class="year">
+          <div class="rok">
+            Year
+          </div>
+          <input type="number" id="rok" placeholder="YYYY" min="1" max="2024">
+        </div>
+      </div>
+      <div class="kreska">
+        <hr>
+        <img src="assets/images/icon-arrow.svg" alt="" onclick="oblicz()">
+      </div>
+      <div class="texts">
+        <div class="yearss"><span>--</span> years</div>
+        <div class="monthss"><span>--</span> months</div>
+        <div class="dayss"><span>--</span> days</div>
+      </div>
+    </div>
+  </div>
+  <script>
+    function oblicz(){
+      var dzien = parseInt(document.getElementById('dni').value);
+      var miesiac = parseInt(document.getElementById('miesiac').value);
+      var rok = parseInt(document.getElementById('rok').value);
+
+      var dataUrodzenia = new Date(rok, mieisac, dzien);
+      var dzisiaj = new Date();
+
+      var ileLat = dzisiaj.getFullYear() - dataUrodzenia.getFullYear();
+
+      
+}
+  </script>
+</body>
+
+</html>
