@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | E-commerce product page</title>
+
+</head>
+
+<body>
+
+  <main id="main">
+
+    <div class="menu" id="menu">
+      <button class="menubutton" id="menubutton" onclick="menubutton()"><img src="images/icon-menu.svg" alt=""></button>
+      <div class="logodiv">
+        <img class="logo" src="images/logo.svg" alt="logo">
+      </div>
+
+      <div class="opacitydiv" id="opacitydiv">
+        <div class="menuul" id="menuuldiv">
+          <ul id="menuul">
+            <button class="menubutton" id="menubutton" onclick="menubuttonclose()"><img src="images/icon-close.svg"
+                alt=""></button>
+
+            <li><a href="">Collections</a></li>
+            <li><a href="">Men</a> </li>
+            <li><a href="">Women</a> </li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="ikony" id="cart">
+        <img class="cart" src="images/icon-cart.svg" alt="cart" onclick="koszyk()">
+        <img class="avatar" src="images/image-avatar.png" alt="avatar">
+      </div>
+    </div>
+    <hr>
+    <div class="container">
+      <div class="left">
+        <img id="mainpicture" class="product1" src="images/image-product-1.jpg" alt="">
+        <div class="thumbnails">
+          <img id="picture1" onclick="picture1()" class="product1thumbnail" src="images/image-product-1-thumbnail.jpg"
+            alt="">
+          <img id="picture2" onclick="picture2()" class="product2thumbnail" src="images/image-product-2-thumbnail.jpg"
+            alt="">
+          <img id="picture3" onclick="picture3()" class="product3thumbnail" src="images/image-product-3-thumbnail.jpg"
+            alt="">
+          <img id="picture4" onclick="picture4()" class="product4thumbnail" src="images/image-product-4-thumbnail.jpg"
+            alt="">
+        </div>
+      </div>
+      <div class="right">
+        <h3>Sneaker Company</h3>
+
+
+        <h2>Fall Limited Edition Sneakers</h2>
+        <p>
+          These low-profile sneakers are your perfect casual wear companion. Featuring a
+          durable rubber outer sole, they’ll withstand everything the weather can offer.
+        </p>
+        <div class="pricesall">
+          <div class="prices">
+            <div id="price">
+              $125.00
+            </div>
+            <div class="discount">
+              50%
+            </div>
+          </div>
+          <div class="pricebefore" id="pricebefore">
+            <s> $250.00</s>
+          </div>
+        </div>
+
+        <div class="buttons">
+
+          <div onclick="pricebefore()" class="items">
+            <button class="minus" onclick="odejmowanie()"><img src="images/icon-minus.svg" alt=""></button>
+            <input placeholder="0" id="cena">
+            </input>
+            <button class="plus" onclick="dodawanie()"><img src="images/icon-plus.svg" alt=""></button>
+          </div>
+          <button class="add"><img class="iconcart" src="images/icon-cart.svg" alt="carticon">Add to cart</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    function picture1() {
+      document.getElementById("mainpicture").src = "images/image-product-1.jpg";
+      document.getElementById("picture2").style.opacity = "1";
+      document.getElementById("picture2").style.outline = "0";
+      document.getElementById("picture3").style.opacity = "1";
+      document.getElementById("picture3").style.outline = "0";
+      document.getElementById("picture4").style.opacity = "1";
+      document.getElementById("picture4").style.outline = "0";
+
+
+      document.getElementById("picture1").style.opacity = "0.5";
+      document.getElementById("picture1").style.outline = "3px solid orange";
+    }
+    function picture2() {
+      document.getElementById("mainpicture").src = "images/image-product-2.jpg";
+      document.getElementById("picture1").style.opacity = "1";
+      document.getElementById("picture1").style.outline = "0";
+      document.getElementById("picture3").style.opacity = "1";
+      document.getElementById("picture3").style.outline = "0";
+      document.getElementById("picture4").style.opacity = "1";
+      document.getElementById("picture4").style.outline = "0";
+
+      document.getElementById("picture2").style.opacity = "0.5";
+      document.getElementById("picture2").style.outline = "3px solid orange";
+    }
+    function picture3() {
+      document.getElementById("mainpicture").src = "images/image-product-3.jpg";
+      document.getElementById("picture2").style.opacity = "1";
+      document.getElementById("picture2").style.outline = "0";
+      document.getElementById("picture1").style.opacity = "1";
+      document.getElementById("picture1").style.outline = "0";
+      document.getElementById("picture4").style.opacity = "1";
+      document.getElementById("picture4").style.outline = "0";
+
+      document.getElementById("picture3").style.opacity = "0.5";
+      document.getElementById("picture3").style.outline = "3px solid orange";
+    }
+    function picture4() {
+      document.getElementById("mainpicture").src = "images/image-product-4.jpg";
+      document.getElementById("picture2").style.opacity = "1";
+      document.getElementById("picture2").style.outline = "0";
+      document.getElementById("picture3").style.opacity = "1";
+      document.getElementById("picture3").style.outline = "0";
+      document.getElementById("picture1").style.opacity = "1";
+      document.getElementById("picture1").style.outline = "0";
+
+      document.getElementById("picture4").style.opacity = "0.5";
+      document.getElementById("picture4").style.outline = "3px solid orange";
+
+    }
+
+    function menubutton() {
+      document.getElementById("menuuldiv").style.display = "flex";
+      document.getElementById("opacitydiv").style.height = "242vh";
+      document.getElementById("opacitydiv").style.width = "100%";
+      document.getElementById("opacitydiv").style.backgroundColor = "rgba(62, 62, 62, 0.7";
+
+      document.getElementById("menuuldiv").style.opacity = "1";
+      document.getElementById("menuul").style.opacity = "1";
+
+    }
+
+    function menubuttonclose() {
+      document.getElementById("menuuldiv").style.display = "none";
+      document.getElementById("main").style.opacity = "1";
+      document.getElementById("opacitydiv").style.height = "0";
+      document.getElementById("opacitydiv").style.width = "0";
+
+    }
+
+    var p = document.getElementById("cena").value;
+
+    function dodawanie() {
+      p++
+      document.getElementById("cena").value = p;
+    }
+    function odejmowanie() {
+      if (p > 0) {
+        p--
+        document.getElementById("cena").value = p;
+      } else {
+        document.getElementById("cena").value = 0;
+      }
+    }
+    function pricebefore() {
+      if (p > 0) {
+        var wynik = p * 125;
+        document.getElementById("price").textContent = "$" + wynik + ".00";
+      }
+
+    }
+    function koszyk() {
+      const cart = document.createElement("div");
+      cart.classList.add("test");
+      document.getElementById("cart").appendChild(cart);
+
+      const carttext = document.createElement("p");
+      carttext.textContent = "Cart";
+      carttext.classList.add("carttext");
+      cart.appendChild(carttext);
+
+      const cartimg = document.createElement("img");
+      cartimg.src = "img/cart.png";
+      cartimg.classList.add("cartimg");
+      cart.appendChild(cartimg);
+    }
+  </script>
+</body>
+
+</html>

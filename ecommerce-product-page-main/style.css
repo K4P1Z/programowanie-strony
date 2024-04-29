@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family: "Kumbh Sans", sans-serif;
+}
+
+.menubutton {
+    display: none;
+}
+
+main {
+
+    background-color: white;
+    height: 85vh;
+    padding: 30px 90px 30px 90px;
+}
+
+.avatar,
+.cart {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+}
+
+.avatar:hover{
+    outline: 2px solid orange;
+    border-radius: 100%;
+}
+.menu {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    height: 22px;
+    margin-right: 35px;
+    margin-left: 20px;
+}
+
+.logodiv {
+    width: 15%;
+}
+
+
+ul li a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: grey;
+    font-size: 18px;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+
+}
+
+.opacitydiv {
+    width: 75%;
+}
+
+.ikony {
+    width: 10%;
+}
+
+.nav {
+    width: 90%;
+}
+
+hr {
+    margin-bottom: 60px;
+}
+
+.container {
+    display: flex;
+    height: 70%;
+}
+
+.product1 {
+    height: 400px;
+    margin: 30px;
+    border-radius: 10px;
+}
+
+.product1thumbnail,
+.product2thumbnail,
+.product3thumbnail,
+.product4thumbnail {
+    height: 80px;
+    width: 80px;
+    border-radius: 10px;
+    margin-left: 26px;
+    cursor: pointer;
+}
+
+.product1thumbnail {
+    opacity: 0.5;
+    outline: 3px solid orange;
+}
+
+.right {
+    padding: 30px;
+    margin-left: 50px;
+    margin-right: 200px;
+    width: 40%;
+}
+
+h3 {
+    color: hsl(26, 100%, 55%);
+    margin: 50px 20px 20px 0px;
+    text-transform: uppercase;
+}
+
+h2 {
+    color: black;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+p {
+    color: grey;
+}
+
+.prices {
+    display: flex;
+    padding: 20px 20px 0px 0px;
+    margin-bottom: 5px;
+}
+
+#price {
+    font-size: 25px;
+    font-weight: 700;
+    margin-right: 15px;
+}
+
+.discount {
+    background-color: rgb(255, 232, 188);
+    font-weight: 700;
+    color: rgb(255, 166, 0);
+    border-radius: 5px;
+    padding: 5px 10px 5px 10px;
+}
+
+.pricebefore {
+    color: grey;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.items {
+    display: flex;
+}
+
+.minus {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.plus {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.items button {
+    color: orange;
+    border: 0;
+    background-color: hsl(223, 64%, 98%);
+    padding: 15px;
+}
+
+.items input {
+    width: 50%;
+    background-color: hsl(223, 64%, 98%);
+    border: 0;
+}
+
+#cena {
+    text-align: center;
+    color: black;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.buttons {
+    display: flex;
+}
+
+.add {
+    background-color: orange;
+    border: 0;
+    border-radius: 10px;
+    width: 70%;
+    font-size: 20px;
+    padding: 15px;
+    color: white;
+    margin-right: 130px;
+    box-shadow: 16px 16px 35px -10px rgba(245, 169, 26, 1);
+}
+
+.iconcart {
+    margin-right: 10px;
+}
+
+.test{
+    background-color: white;
+    width: 400px;
+    height: 230px;
+    margin-left: -170px;
+    position: absolute;
+    border-radius: 10px;
+    box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+    padding: 20px;
+}
+.carttext{
+    color: black;
+    font-weight: 700;
+    font-size: 20px;
+}
+@media only screen and (max-width: 425px) {
+    main {
+        margin: 0;
+        padding: 0;
+        height: 125vh;
+    }
+
+    .logo {
+        margin: 0;
+    }
+
+    .menu {
+        padding-top: 10px;
+    }
+
+    #mainpicture {
+        width: 425px;
+        margin: 0;
+        border-radius: 0;
+        height: 350px;
+    }
+
+    .thumbnails {
+        display: none;
+    }
+
+    hr {
+        display: none;
+    }
+
+    .container {
+        display: block;
+    }
+
+    .right {
+        margin-left: 5px;
+        width: 100%;
+        margin-right: 0;
+
+    }
+
+    h3 {
+        font-size: 15px;
+        margin: 0;
+    }
+
+    h2 {
+        font-size: 30px;
+        margin-right: 50px;
+        margin-bottom: 15px;
+    }
+
+    .pricesall {
+        display: flex;
+        margin-bottom: 20px;
+
+    }
+
+    .pricebefore {
+        margin-left: 30%;
+        margin-top: 14px;
+
+    }
+
+    .buttons {
+        display: block;
+    }
+
+    .items input {
+        width: 100%;
+    }
+
+    .add {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .menubutton {
+        display: flex;
+        padding: 5px;
+        margin-left: 15px;
+        margin-right: 15px;
+        background-color: white;
+        border: none;
+    }
+
+    .menuul {
+        width: 0;
+        display: none;
+        position: absolute;
+        height: 125vh;
+        margin-top: 1000px;
+        width: 100%;
+    }
+
+    .opacitydiv {
+        position: absolute;
+
+    }
+
+    ul {
+
+        display: block;
+        width: 212px;
+        font-weight: 700;
+        background-color: white;
+        padding-top: 25px;
+
+    }
+
+    ul li a {
+        color: rgb(77, 77, 77);
+    }
+
+    ul li {
+        margin-top: 20px;
+    }
+
+    .ikony {
+        display: flex;
+        margin-left: 40%;
+        width: 100%;
+    }
+
+    .ikony img {
+        height: 30px;
+        width: 30px;
+    }
+
+
+
+}
