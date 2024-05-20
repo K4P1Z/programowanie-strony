@@ -1,0 +1,47 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.baner, footer{
+    background-color: #BA6B6C;
+    color: white;
+    padding: 7px;
+}
+.bloki{
+    display: flex;
+}
+.right, .left{
+    background-color: #EF9A9A;
+    width: 20%;
+    height: 500px;
+}
+.middle{
+    background-color: mistyrose;
+    width: 60%;
+    height: 500px;
+}
+table{
+    border: 1px solid maroon;
+    margin: auto;
+    width: 80%;
+}
+ol{
+    list-style: upper-roman;
+    text-align: left;
+}
+h2::first-letter{
+    color: maroon;
+    font-size: 170%;
+}
+
+.dane{
+    padding: 50px;
+    background-color: mistyrose;
+}
+img{
+    height: 120px;
+    margin: 7px;
+    box-shadow: 7px 7px 7px dimgray;
+}
+
