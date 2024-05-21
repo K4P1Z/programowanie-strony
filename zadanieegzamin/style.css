@@ -1,0 +1,76 @@
+body,*{
+    margin: 0;
+    padding: 0;
+}
+.left{
+    border: 1px solid black;
+    height: 945px;
+    width: 20%;
+}
+ul{
+    margin-top: 30px;
+    margin-left: 20px;
+    list-style: none;
+}
+li a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+h2{
+    font-size: 35px;
+}
+
+main{
+    display: flex;
+}
+.right{
+    width: 80%;
+}
+.header{
+    border: 1px solid black;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.header header{
+    text-align: center;
+    flex-direction: column;
+}
+
+.contener{
+    border: 1px solid black;
+    height: 70%;
+
+}
+
+footer{
+    border: 1px solid black;
+    height: 15%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.obliczanie{
+    border: 1px solid black;
+    width: 60%;
+    margin-left: 20%;
+   padding: 20px;
+   border-radius: 20px;
+   height: 400px;
+   margin-top: 50px;
+
+}
+.wiersz1,.wiersz2,.wiersz3{
+    width: 100%;
+    display: flex;
+    font-size: 30px;
+
+}
+button{
+
+}
+
