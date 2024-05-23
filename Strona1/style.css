@@ -1,0 +1,246 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #4b4b4b;
+    width: 97vw;
+    overflow-x:hidden;
+}
+nav{
+    width: 100%;
+    background-color: #d6bb22;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+}
+main{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+section{
+    width: 80%;
+    padding: 20px;
+}
+footer{
+    width: 100%;
+    background-color: #d6bb22;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+}
+.Text{
+    background-color: #202020;
+    margin: 20px;
+    border-radius: 10px;
+    height: 35vh;
+    overflow-y: scroll;
+    padding: 20px;
+    height: 80%;
+    width: 90%;
+}
+
+.TextCon{
+    background-color: #202020;
+    margin: 20px;
+    border-radius: 10px;
+    height: 35vh;
+    padding: 20px;
+
+
+}
+
+ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+li{
+    background-color: #202020;
+    padding: 20px;
+    width: 14%;
+    border-radius: 5px;
+    border: solid 0px #d6bb22;
+    margin: 2px;  
+}
+
+li:hover{
+    border: solid 2px #d6bb22;
+    transition-duration: 0.2s;
+    margin: 0;
+}
+
+a{
+    display: block;
+    width: 50px;
+    height: 20px;
+    border-radius: 30%;
+    background-color: #d6bb22;
+    padding: 10px;
+    color: black;
+    border: solid 2px #d6bb22;
+    margin-left: 60%;
+    text-decoration: none;
+}
+
+a:hover{
+    transition-duration: 0.2s;
+    background-color: #202020;
+    color: #d6bb22;
+}
+
+img{
+    width: 200px;
+    height: 200px;
+    border: solid 2px #d6bb22;
+    border-radius: 100%;
+    align-self: center;
+}
+
+
+.BackSite{
+    display: flex;
+    flex-direction: row;
+}
+
+.BackSiteIMG{
+    width: 500px;
+    height: 500px;
+    border: solid 0;
+}
+
+.BackSiteA{
+    width: 200px;
+    height: 15px;
+    position: absolute;
+    left: 15vw;
+    top: 30px;
+    background-color: #202020;
+    color: #d6bb22;
+}
+.BackSiteA:hover{
+    transition-duration: 0.2s;
+    background-color: #505050;
+    color: #d6bb22;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  ::-webkit-scrollbar-corner {
+background: #555;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #555;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #888;
+  }
+
+  .Tabela{
+    background-color: #202020;
+    margin: 20px;
+    border-radius: 10px;
+    height: 35vh;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .scroll{
+    overflow-x: scroll;
+    width: 100%;
+    height: 100%;
+    
+  }
+
+  .Tabele{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 250%;
+  }
+
+  .Tabela1{
+    border: solid 2px #d6bb22;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .Tabela1 tr:last-child, .Tabela1 tr:nth-child(2){
+    background-color: #d6bb22;
+    color: #202020;
+  }
+
+  .Tabela1 tr:nth-child(2) td:first-child,  .Tabela1 tr:nth-child(2) td:last-child,   .Tabela1 tr:nth-child(4) td:first-child,  .Tabela1 tr:nth-child(4) td:last-child{
+    color: green;
+  }
+
+  .Tabela1 tr:nth-child(3) td:nth-child(2){
+    color:red;
+  }
+
+  .Tabela1 td, .Tabela1 th
+  {
+padding: 20px;
+width: 200px;
+border: solid 2px #222;
+  }
+
+  .Tabela2{
+    border: solid 2px #d6bb22;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .Tabela2 tr:first-child, .Tabela2 tr:nth-child(3){
+    background-color: #d6bb22;
+    color: #202020;
+  }
+
+  .Tabela2 tr:nth-child(2) td:first-child,  .Tabela2 tr:nth-child(2) td:last-child,   .Tabela2 tr:nth-child(4) td:first-child,  .Tabela2 tr:nth-child(4) td:last-child{
+    color: red;
+  }
+
+  .Tabela2 tr:nth-child(3) td:nth-child(2){
+    color:green;
+  }
+
+  .Tabela2 td, .Tabela2 th
+  {
+padding: 20px;
+width: 200px;
+border: solid 2px #222;
+  }
+
+  iframe{
+    width: 100%;
+  }
+
+  span{
+    background-color: white;
+    color: red;
+    position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+  }
