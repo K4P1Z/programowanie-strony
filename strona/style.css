@@ -1,0 +1,174 @@
+html,
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.menu {
+    display: flex;
+    border: 1px solid black;
+}
+
+.ikona {
+    width: 80%;
+    padding-left: 15px;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+}
+
+.buttons button {
+    height: 35px;
+    margin-left: 10px;
+    padding: 5px;
+}
+a{
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
+}
+
+.first-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    height: 500px;
+}
+
+.pic {
+    width: 500px;
+    height: 300px;
+}
+
+.text {
+    font-size: 20px;
+    width: 20%;
+    padding-right: 50px;
+}
+
+.second-container {
+    border: 1px solid black;
+    height: 130px;
+}
+
+.second-container img {
+    width: 100%;
+    height: 100%;
+}
+
+.third-container {
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+
+}
+
+.formularz {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    padding: 20px;
+    margin-bottom: 70px;
+    margin-top: 20px;
+}
+.formularz input{
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+
+}
+.formularz button{
+    padding: 5px;
+    margin-left: 70%;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+
+}
+footer p{
+    font-size: 25px;
+}
+
+.first-container2 {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    border: 1px solid black;
+    height: 650px;
+}
+.pic1, .pic2, .pic3 {
+    width: 300px;
+    height: 200px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.column1, .column2{
+    width: 100%;
+}
+
+.first-container3{
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+}
+.bloki{
+    width: 50%;
+}
+/* Blok1 */
+.blok1{
+    border: solid 1px black;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    display: flex;
+}
+.blok1 img{
+    height: 150px;
+    width: 40%;
+}
+.art1{
+    width: 60%;
+    margin-left: 50px;
+    
+}
+.blok1 p{
+    font-size: 20px;
+}
+.blok1 button{
+    float: right;
+    padding: 5px;
+}
+
+.blok2, .blok3{
+    width: 50%;
+    border: solid 1px black;
+    margin: 5px;
+    padding: 10px;
+}
+
+.line2, .line3{
+    display: flex;
+}
+
+.blok4, .blok5, .blok6{
+    width: 50%;
+    border: solid 1px black;
+    margin: 5px;
+    padding: 10px;
+}
+
+.blok2 img, .blok3 img,.blok4 img, .blok5 img, .blok6 img{
+    width: 100%;
+}
+
+.blok2 button, .blok3 button,.blok4 button, .blok5 button, .blok6 button{
+    float: right;
+}
+
