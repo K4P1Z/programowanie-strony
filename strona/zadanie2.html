@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <h1>Pobierz dane z map</h1>
+    </section>
+    <section>
+        <p id="wynik">
+            Lorem ipsum dolor sit  amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis
+        </p>
+        <article id="mapa">
+
+        </article>
+        <button id="pobierz">POBIERZ</button>
+    </section>
+    <script>
+        const pobierz = document.getElementById("pobierz");
+        const mapa = document.getElementById("mapa");
+        const wynik = document.getElementById("wynik");
+        const tablicaName = ["Arkadiusz Waliczek", "Monika Waliczek", "Zenek Waliczek", "Dorota Waliczek"];
+
+        pobierz.addEventListener("click", function(){
+            wynik.innerHTML = "Pobrano liste nazwisk";
+            mapa.innerHTML = "<ul>";
+            tablicaName.map((v,i)=>{
+                mapa.innerHTML += `${i+1} ${v} </li>;`;
+            })
+            mapa.innerHTML += "</ul>";
+        });
+    </script>
+    
+</body>
+</html>
